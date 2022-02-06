@@ -1,0 +1,4 @@
+requests_downloader
+pydub
+tqdm
+pandas
