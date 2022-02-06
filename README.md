@@ -29,7 +29,7 @@ mfa align -t temp train/ dict.txt acoustic_model.zip output/
 ```
 (Some recent versions of MFA leave the textgrids in `temp/train_pretrained_aligner/pretrained_aligner/textgrids/`. You may need to `cp` them into `output`)
 
-This will generate the acoustic model and generate the alignments in output in the TextGrid format. See instructions above for using this output.
+This will generate the acoustic model and the alignments in the `output` dir in the TextGrid format. See instructions above for using this output.
 
 ## Speech to text
 To use the generated acoustic model to train a language model and use it for Speech to text, run the following commands. Note that the accuracy will be very low, since we trained on only 65 shlokas.
