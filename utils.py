@@ -20,7 +20,7 @@ def download_files(base_url, files, download_dir):
         download_path = os.path.join(download_dir, f)
         if not os.path.exists(download_path):
             url = f'{base_url}/{f}'
-            downloader.download(url, download_path=download_path)
+            downloader.download(url, download_path=download_path, smart=False)
 
 
 def split_audio(df, audio_dir, output_dir):
